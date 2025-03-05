@@ -12791,11 +12791,11 @@ pre .code {
   padding-top: 5px;
 }
 
-.custom-navbar .hamburger .hamburger-inner,
+/* .custom-navbar .hamburger .hamburger-inner,
 .custom-navbar .hamburger .hamburger-inner::before,
 .custom-navbar .hamburger .hamburger-inner::after {
   background: #fff;
-}
+} */
 
 .custom-navbar .nav {
   list-style-type: none;
@@ -13020,7 +13020,7 @@ pre .code {
 
   .custom-navbar .nav {
     position: absolute;
-    top: calc(100% + 1px);
+    top: calc(1% + 1px);
     left: 0;
     background: #fff;
     border-radius: 0 0 0 0;
