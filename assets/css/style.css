@@ -13420,3 +13420,21 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+@keyframes fadeInMove {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Initially hide elements */
+h1, h2, h3, h4, h5, h6, p, span, strong, em, li, b {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out, color 1.5s ease-out;
+}
+
+/* Class to trigger animation */
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

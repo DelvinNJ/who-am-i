@@ -28,10 +28,22 @@ $(document).ready(function () {
             }
         });
     });
-});
 
-// navbar toggle
-$('#nav-toggle').click(function () {
-    $(this).toggleClass('is-active')
-    $('ul.nav').toggleClass('show');
+    // navbar toggle
+    $('#nav-toggle').click(function () {
+        $(this).toggleClass('is-active')
+        $('ul.nav').toggleClass('show');
+    });
+
+    const textElements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, strong, em, li, b");
+        
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        textElements.forEach(el => observer.observe(el));
 });
