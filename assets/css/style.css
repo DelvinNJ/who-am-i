@@ -13392,6 +13392,9 @@ pre .code {
   .left {
     text-align: left;
   }
+  .justify {
+    text-align: justify;
+  }
 }
 
 /* sections */
